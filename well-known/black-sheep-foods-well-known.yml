@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: live probe of https://blacksheepfoods.com/.well-known/*
+host: https://blacksheepfoods.com
+note: >-
+  blacksheepfoods.com runs on Shopify. The OIDC/OAuth discovery documents below
+  are served by the Shopify storefront (issuer https://shopify.com/authentication/67954377021,
+  Shopify Customer Account API) — they are genuine 200 responses on this host but
+  describe Shopify's customer-account auth, not a first-party Black Sheep Foods API.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: black-sheep-foods-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: black-sheep-foods-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

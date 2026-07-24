@@ -1,8 +1,27 @@
 aid: black-sheep-foods
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/black-sheep-foods.png
 name: Black Sheep Foods
-description: 'Black Sheep Foods is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: deep-tech. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Black Sheep Foods is a San Francisco food-technology company making plant-based meat that
+  targets the flavors and textures of premium and heritage animal proteins — starting with its signature
+  meat-free lamb, plus steak bites, built on a proprietary pea-protein DualTexture blend. Originally
+  launched as a restaurant and retail brand (served at Bay Area restaurants and sold as vegan ground
+  lamb), the company has increasingly positioned itself as a B2B ingredient supplier, licensing its
+  DualTexture protein platform for hybrid and fully plant-based meat products. It is venture-backed
+  (investors include Bessemer Venture Partners and AgFunder) and pitches a sustainability story of far
+  lower land, water, and greenhouse-gas footprint than conventionally raised lamb. This is a consumer/
+  ingredient food-tech business with no first-party public developer API; its web presence runs on
+  Shopify.'
 url: https://raw.githubusercontent.com/api-evangelist/black-sheep-foods/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Deep Tech
+- Food Technology
+- Plant-Based Meat
+- Alternative Protein
+- Food and Beverage
+- Consumer Packaged Goods
+- Sustainability
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/black-sheep-foods-domain-security.yml
+- type: WellKnown
+  url: well-known/black-sheep-foods-well-known.yml
 - type: Website
   url: https://blacksheepfoods.com/
+- type: Blog
+  url: https://blacksheepfoods.com/blogs/news
+- type: PrivacyPolicy
+  url: https://blacksheepfoods.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://blacksheepfoods.com/policies/terms-of-service
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
